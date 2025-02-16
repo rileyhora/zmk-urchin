@@ -94,9 +94,9 @@
 		sym_layer {
 			label = "Sym.";
 			bindings = <
-			&kp LC(X) &kp N2 &kp N3 &kp N4 &kp N5		                                    &kp N6 &kp N7 &kp N8 &kp N9 &kp N0
-			&kp LC(C) &kp LC(V) &kp IT_LPAR &kp IT_LBRC &kp IT_LBKT  &kp IT_EQL &kp IT_QUES &kp IT_SQUOT &kp IT_MINUS &kp IT_AST
-			&kp IT_GREAT &kp IT_PERC &kp IT_RPAR &kp IT_RBRC &kp IT_RBKT 	&kp IT_AT &kp IT_EXCL &kp IT_DQUOT &kp IT_PLUS &kp IT_FSLH
+			&kp LC(X) &kp EXCL &kp LPAR &kp RPAR &kp BSLH		                 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0
+			&kp LC(C) &kp LC(V) &kp LBRC &kp RBRC &kp HASH  &kp ASTRK          &kp IT_QUES &kp IT_SQUOT &kp IT_MINUS &kp IT_AST
+			&kp CARET &kp AMPS &kp LBKT &kp RBKT &kp PIPE 	&kp IT_AT &kp IT_EXCL &kp IT_DQUOT &kp IT_PLUS &kp IT_FSLH
 														&mo FNC  &mo SYM2       &trans &trans
 			>;
 		};
@@ -105,7 +105,7 @@
 		ext_layer {
 			label = "Mods";
 			bindings = <
-			&kp ESC  &kp C_PREV &kp C_PP  &kp C_NEXT  &kp C_PAUSE    	&kp PG_UP  &kp HOME &kp UP &kp END &kp CAPS
+			&kp LC(X)  &kp C_PREV &kp C_PP  &kp C_NEXT  &kp C_PAUSE    	&kp PG_UP  &kp HOME &kp UP &kp END &kp CAPS
 			&sk LALT &sk LGUI  &sk LSHIFT  &sk LCTRL  &kp RALT 			&kp PG_DN &kp LEFT  &kp DOWN  &kp RIGHT   &kp DEL
 			&kp LC(Z)  &kp LC(X) &kp LC(C) &kp TAB   &kp LC(V)          &kp LC(BSPC) &kp BSPC &trans &trans  &trans
 																		&trans &kp LCTRL    &kp ENTER  &mo FNC 
