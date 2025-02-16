@@ -14,8 +14,7 @@
 #define EXT 2
 #define FNC 3
 #define SYM2 4
-#define ACCENT 5
-#define SETTINGS 6
+#define SETTINGS 5
 // -----------------
 
 &sk {
@@ -41,7 +40,7 @@
 		as: auto_shift {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping_term_ms = <155>;
+            tapping_term_ms = <160>;
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
@@ -107,9 +106,9 @@
 			label = "Sym.";
 			bindings = <
 			&kp LC(X) &kp EXCL &kp LPAR &kp RPAR &kp BSLH		    &kp SLASH &kp N7 &kp N8 &kp N9 &kp KP_MINUS
-			&kp LC(C) &kp LC(V) &kp LBRC &kp RBRC &kp HASH          &kp ASTRK &kp N4 &kp N5 &kp N6 &kp KP_PLUS
-			&kp CARET &kp AMPS &kp LBKT &kp RBKT &kp PIPE 	        &kp DOT &kp N1 &kp N2 &kp N3 &kp KP_EQUAL
-											&mo FNC  &mo SYM2       &kp RET &kp N0
+			&kp LC(C) &kp LC(V) &kp LBRC &kp RBRC &kp HASH          &kp ASTRK AS(N4) AS(N5) &kp N6 &kp KP_PLUS
+			&kp CARET &kp AMPS &kp LBKT &kp RBKT &kp PIPE 	        &kp DOT &kp N1 AS(N2) &kp N3 &kp KP_EQUAL
+											&none &mo SYM2       &kp RET &kp N0
 			>;
 		};
 
@@ -143,17 +142,6 @@
 			&kp IT_BKTK &kp IT_TILDE &kp IT_BSLH &kp IT_PIPE &kp IT_AND         &none &none &none &none &none
 			&none 			&none 			 &kp IT_SECT &kp IT_CCED &kp IT_DEG				  &none &none &none &none &none
 																	&none &none        	&none &none 
-			>;
-		};
-
-		// Used to type regional accents.
-		accent_layer {
-			label = "Accent";
-			bindings = <
-			&none &none &none &kp IT_CEGR &none                         &none &none &none &none &none 
-			&kp IT_AGRV &kp IT_IGRV &kp IT_OGRV &kp IT_EGRV &kp IT_EACU &none &none &none &none &none
-			&none &none &none &kp IT_UGRV &none                         &none &none &none &none &none
-									&none &none                         &none &none 
 			>;
 		};
 
