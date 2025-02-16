@@ -40,7 +40,7 @@
 		as: auto_shift {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping_term_ms = <160>;
+            tapping_term_ms = <165>;
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
@@ -101,7 +101,7 @@
 			&kp LC(X) &kp EXCL &kp LPAR &kp RPAR &kp BSLH		    &kp SLASH &kp N7 &kp N8 &kp N9 &kp KP_MINUS
 			&kp LC(C) &kp LC(V) &kp LBRC &kp RBRC &kp HASH          &kp ASTRK AS(N4) AS(N5) &kp N6 &kp KP_PLUS
 			&kp CARET &kp AMPS &kp LBKT &kp RBKT &kp PIPE 	        &kp DOT &kp N1 AS(N2) &kp N3 &kp KP_EQUAL
-											&none &mo SYM2       &kp RET &kp N0
+											&none &none       &kp RET &kp N0
 			>;
 		};
 
@@ -112,7 +112,7 @@
 			&kp LC(X)  &kp C_PREV &kp C_PP  &kp C_NEXT  &kp C_PAUSE    	&kp PG_UP  &kp HOME &kp UP &kp END &kp CAPS
 			&sk LALT &sk LGUI  &sk LSHIFT  &sk LCTRL  &kp RALT 			&kp PG_DN &kp LEFT  &kp DOWN  &kp RIGHT   &kp DEL
 			&kp LC(Z)  &kp LC(X) &kp LC(C) &kp TAB   &kp LC(V)          &kp LC(BSPC) &kp BSPC &trans &trans  &trans
-									&trans &kp LCTRL    &kp ENTER  &mo FNC 
+									&trans &kp LCTRL    &kp ENTER  &none 
 			>;
 		};
 
