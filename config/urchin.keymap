@@ -94,9 +94,9 @@
 		sym_layer {
 			label = "Sym.";
 			bindings = <
-			&kp LC(X)   &kp EXCL   &kp LPAR   &kp RPAR   &kp BSLH        &kp FSLH  &kp KP_7  &kp KP_8  &kp KP_9  &kp MINUS
-			&kp LC(C)   &kp LC(V)  &kp LCBR   &kp RCBR   &kp HASH        &kp AST   &kp KP_4  &kp KP_5  &kp KP_6  &kp KP_PLUS
-			&kp CIRC    &kp AMPR   &kp LBKT   &kp RBKT   &kp PIPE        &kp DOT   &kp KP_1  &kp KP_2  &kp KP_3  &kp EQUAL
+			&kp K_CUT &kp N2 &kp N3 &kp N4 &kp N5		                                    &kp N6 &kp N7 &kp N8 &kp N9 &kp N0
+			&kp IT_LESS &kp IT_USD &kp IT_LPAR &kp IT_LBRC &kp IT_LBKT  &kp IT_EQL &kp IT_QUES &kp IT_SQUOT &kp IT_MINUS &kp IT_AST
+			&kp IT_GREAT &kp IT_PERC &kp IT_RPAR &kp IT_RBRC &kp IT_RBKT 	&kp IT_AT &kp IT_EXCL &kp IT_DQUOT &kp IT_PLUS &kp IT_FSLH
 														&mo FNC  &mo SYM2       &trans &trans
 			>;
 		};
