@@ -81,7 +81,7 @@
 			AS(Q)   AS(W)   AS(F)   AS(P)   AS(B)          AS(J)   AS(L)   AS(U)   AS(Y)   AS(SEMI)
 			AS(A)   AS(R)   AS(S)   AS(T)   AS(G)          AS(M)   AS(N)   AS(E)   AS(I)   AS(O)
 			AS(Z)   AS(X)   AS(C)   AS(D)   AS(V)          AS(K)   AS(H)   AS(COMMA) AS(DOT) AS(SLASH)
-							&mt SYM DEL &kp BSPC          &kp SPACE &mt FNC ENTER
+							&lt SYM DEL &kp BSPC          &kp SPACE &lt FNC ENTER
 			>;
 		};
 
