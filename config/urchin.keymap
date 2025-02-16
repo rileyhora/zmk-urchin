@@ -10,7 +10,7 @@
 // Layer definitions
 #define BASE 0
 #define SYM 1
-#define FNC 2
+#define MOUSE 2
 #define SETTINGS 3
 // -----------------
 
@@ -55,6 +55,12 @@
 	};
 
 	combos {
+		// Activate MOUSE layer when both outer thumb keys are held
+		combo_mouse {
+            timeout-ms = <200>;
+            key-positions = <30 33>;
+            bindings = <&mo MOUSE>;
+    };
 		// both left thumb keys
 		combo_settings {
 			timeout-ms = <200>;
@@ -96,15 +102,15 @@
 		};
 
 		// Function keys with modifiers
-		fnc_layer {
-			label = "FRow";
-			bindings = <
-			&kp K_PP &kp K_MUTE &kp K_VOL_DN &kp K_VOL_UP &kp PG_UP       &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 
-			&sk LCMD &kp LEFT &kp UP &kp RIGHT &kp PG_DN                  &kp F11 &kp F12  &kp PRINTSCREEN &trans &trans
-			&kp PSCRN &kp INS &kp DOWN &kp HOME &kp END				      &none &none &none &none &none 
-							  &none &none              &none &none  
-			>;
-		};
+		mouse_layer {
+            label = "Mouse";
+            bindings = <
+            &none   &none   &none   &kp MS_W_UP  &none                &none   &kp MS_WH_L   &kp MS_WH_R   &none   &none
+            &none   &kp MS_LEFT  &kp MS_UP  &kp MS_RIGHT  &none       &none   &kp MS_BTN1   &kp MS_BTN2   &none   &none
+            &none   &none   &kp MS_DOWN  &kp MS_W_DOWN  &none         &none   &kp MS_BTN3   &kp MS_BTN4   &kp MS_BTN5   &none
+                           &none   &none   &none        &none   &none   &none
+    >;
+};
 
 		// Used to change the keyboard's settings.
 		settings_layer {
