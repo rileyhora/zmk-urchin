@@ -64,7 +64,7 @@
         };
 
 		combo_settings {
-			timeout-ms = <200>;
+			timeout-ms = <500>;
 			key-positions = <30 31>; // both left thumb keys
 			bindings = <&mo SETTINGS>;
 		};
@@ -83,8 +83,8 @@
 
 		combo_quote {
 			timeout-ms = <200>;
-			key-positions = <18 19>;  // I + O
-			bindings = <&kp APOS>;
+			key-positions = <30 18 19>;  // left thumb + I + O
+			bindings = <&ht APOS DQUOT>;  // Tap for ', Hold for "
 		};
 
 		combo_undo {
@@ -107,7 +107,7 @@
 
 		combo_dash {
 			timeout-ms = <200>;
-			key-positions = <14 17>;  // T + N
+			key-positions = <13 16>;  // T + N
 			bindings = <&kp MINUS>;
 		};
 
