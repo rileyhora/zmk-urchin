@@ -84,7 +84,7 @@
 		combo_quote {
 			timeout-ms = <200>;
 			key-positions = <30 18 19>;  // left thumb + I + O
-			bindings = <&ht APOS DQUOT>;  // Tap for ', Hold for "
+			bindings = <&kp APOS>;  // Tap for ', Hold for "
 		};
 
 		combo_undo {
@@ -112,7 +112,7 @@
 		};
 
 		combo_tab {
-			timeout-ms = <200>;
+			timeout-ms = <300>;
 			key-positions = <10 11>;  // A + R
 			bindings = <&kp TAB>;
 		};
