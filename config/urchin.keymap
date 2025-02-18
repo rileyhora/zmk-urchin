@@ -37,7 +37,7 @@
 		as: auto_shift {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping_term_ms = <180>;
+            tapping_term_ms = <190>;
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
@@ -56,6 +56,7 @@
 	};
 
 	combos {
+		compatible = "zmk,combos";
 		// Activate MOUSE layer when both outer thumb keys are held
 		combo_mouse {
             timeout-ms = <200>;
