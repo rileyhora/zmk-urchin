@@ -83,7 +83,7 @@
 
 		combo_quote {
 			timeout-ms = <200>;
-			key-positions = <17 18>;  // I + O
+			key-positions = <18 19>;  // I + O
 			bindings = <&kp APOS>;
 		};
 
@@ -101,13 +101,13 @@
 
 		combo_underscore {
 			timeout-ms = <200>;
-			key-positions = <23 27>;  // D + H
+			key-positions = <23 26>;  // D + H
 			bindings = <&kp UNDERSCORE>;
 		};
 
 		combo_dash {
 			timeout-ms = <200>;
-			key-positions = <9 14>;  // T + N
+			key-positions = <14 17>;  // T + N
 			bindings = <&kp MINUS>;
 		};
 
@@ -131,7 +131,7 @@
 
 		combo_tilde {
 			timeout-ms = <200>;
-			key-positions = <3 7>;  // P + L
+			key-positions = <3 6>;  // P + L
 			bindings = <&kp TILDE>;
 		};
 	};
