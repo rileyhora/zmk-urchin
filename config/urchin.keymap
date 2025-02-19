@@ -80,43 +80,49 @@
 		};
 
 	    combo_esc {
-        	timeout-ms = <200>;
+        	timeout-ms = <300>;
         	key-positions = <1 2>;  // W + F
         	bindings = <&kp ESC>;
     		};
 
 		combo_caps_lock {
-			timeout-ms = <200>;
+			timeout-ms = <300>;
 			key-positions = <2 3>;  // F + P
 			bindings = <&kp CAPS>;
 		};
 
-		combo_quote {
-			timeout-ms = <200>;
+		combo_apos {
+			timeout-ms = <300>;
 			key-positions = <30 18 19>;  // left thumb + I + O
-			bindings = <&kp APOS>;  // Tap for ', Hold for "
+			bindings = <&kp APOS>;
+		};
+
+		combo_dqt {
+			timeout-ms = <300>;
+			key-positions = <30 8 9>;  // left thumb + Y + ;
+			bindings = <&kp DQT>;
 		};
 
 		combo_undo {
-			timeout-ms = <200>;
+			timeout-ms = <300>;
 			key-positions = <20 22>;  // Z + C
 			bindings = <&kp LC(Z)>;
 		};
 
 		combo_save {
-			timeout-ms = <200>;
+			timeout-ms = <300>;
 			key-positions = <20 23>;  // Z + D
 			bindings = <&kp LC(S)>;
 		};
 
 		combo_underscore {
-			timeout-ms = <200>;
+			timeout-ms = <300>;
 			key-positions = <23 26>;  // D + H
 			bindings = <&kp UNDERSCORE>;
 		};
 
 		combo_dash {
-			timeout-ms = <200>;
+			timeout-ms = <300>;
 			key-positions = <13 16>;  // T + N
 			bindings = <&kp MINUS>;
 		};
@@ -128,19 +134,19 @@
 		};
 
 		combo_shift {
-			timeout-ms = <200>;
+			timeout-ms = <300>;
 			key-positions = <0 1>;  // Q + W
 			bindings = <&kp LSHIFT>;
 		};
 
 		combo_ctrl {
-			timeout-ms = <200>;
+			timeout-ms = <300>;
 			key-positions = <20 21>;  // Z + X
 			bindings = <&kp LCTRL>;
 		};
 
 		combo_tilde {
-			timeout-ms = <200>;
+			timeout-ms = <300>;
 			key-positions = <3 6>;  // P + L
 			bindings = <&kp TILDE>;
 		};
