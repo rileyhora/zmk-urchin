@@ -129,6 +129,7 @@
 
 		combo_tab {
 			timeout-ms = <400>;
+			require-prior-idle-ms = <200>;
 			key-positions = <10 11>;  // A + R
 			bindings = <&kp TAB>;
 		};
@@ -180,7 +181,7 @@
             &kp C_PP  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp PG_UP       &kp LALT   &kp F7    &kp F8   &kp F9   &kp F12
             &kp LGUI  &kp LEFT    &kp UP        &kp RIGHT     &kp PG_DN       &kp ASTRK &kp F4    &kp F5   &kp F6   &kp F11
             &kp PSCRN &kp K_PREV     &kp DOWN      &kp K_NEXT      &kp END         &kp DOT  &kp F1    &kp F2   &kp F3   &kp F10
-                                &none    &mo MOUSE   &none          &none   &none   &none
+                                &none   &none          &none   &none
             >;
         };
 
@@ -190,7 +191,7 @@
             &none     &none      &none      &msc SCRL_UP   &none       &none     &msc SCRL_LEFT  &msc SCRL_RIGHT  &none     &none
             &none     &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none    &none     &mkp LCLK  &mkp RCLK  &none     &none
             &none     &none      &mmv MOVE_DOWN  &msc SCRL_DOWN  &none       &none     &mkp MB3  &mkp MB4  &mkp MB5  &none
-                                &none      &none       &none        &none     &none      &none
+                                &none      &none        &none     &none
             >;
         };
 
