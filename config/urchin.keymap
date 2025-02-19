@@ -40,7 +40,7 @@
 		as: auto_shift {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping_term_ms = <190>;
+            tapping_term_ms = <200>;
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
@@ -74,20 +74,20 @@
         };
 
 		combo_settings {
-			timeout-ms = <750>;
+			timeout-ms = <200>;
 			key-positions = <30 31>; // both left thumb keys
 			bindings = <&mo SETTINGS>;
 		};
 
 	    combo_esc {
-        	timeout-ms = <300>;
+        	timeout-ms = <200>;
 			require-prior-idle-ms = <200>;
         	key-positions = <1 2>;  // W + F
         	bindings = <&kp ESC>;
     		};
 
 		combo_caps_lock {
-			timeout-ms = <300>;
+			timeout-ms = <200>;
 			require-prior-idle-ms = <200>;
 			key-positions = <2 3>;  // F + P
 			bindings = <&kp CAPS>;
@@ -108,57 +108,57 @@
 		};
 
 		combo_undo {
-			timeout-ms = <300>;
+			timeout-ms = <200>;
 			require-prior-idle-ms = <200>;
 			key-positions = <20 22>;  // Z + C
 			bindings = <&kp LC(Z)>;
 		};
 
 		combo_save {
-			timeout-ms = <300>;
+			timeout-ms = <200>;
 			require-prior-idle-ms = <200>;
 			key-positions = <20 23>;  // Z + D
 			bindings = <&kp LC(S)>;
 		};
 
 		combo_underscore {
-			timeout-ms = <300>;
-			require-prior-idle-ms = <200>;
+			timeout-ms = <200>;
+			require-prior-idle-ms = <300>;
 			key-positions = <23 26>;  // D + H
 			bindings = <&kp UNDERSCORE>;
 		};
 
 		combo_dash {
-			timeout-ms = <300>;
-			require-prior-idle-ms = <200>;
+			timeout-ms = <200>;
+			require-prior-idle-ms = <400>;
 			key-positions = <13 16>;  // T + N
 			bindings = <&kp MINUS>;
 		};
 
 		combo_tab {
-			timeout-ms = <400>;
-			require-prior-idle-ms = <200>;
+			timeout-ms = <200>;
+			require-prior-idle-ms = <400>;
 			key-positions = <10 11>;  // A + R
 			bindings = <&kp TAB>;
 		};
 
 		combo_shift {
-			timeout-ms = <300>;
+			timeout-ms = <200>;
 			require-prior-idle-ms = <200>;
 			key-positions = <0 1>;  // Q + W
 			bindings = <&kp LSHIFT>;
 		};
 
 		combo_ctrl {
-			timeout-ms = <300>;
+			timeout-ms = <200>;
 			require-prior-idle-ms = <200>;
 			key-positions = <20 21>;  // Z + X
 			bindings = <&kp LCTRL>;
 		};
 
 		combo_tilde {
-			timeout-ms = <300>;
-			require-prior-idle-ms = <200>;
+			timeout-ms = <200>;
+			require-prior-idle-ms = <300>;
 			key-positions = <3 6>;  // P + L
 			bindings = <&kp TILDE>;
 		};
