@@ -49,8 +49,8 @@
             compatible = "zmk,behavior-input-two-axis";
             x-input-code = <INPUT_REL_X>;
             y-input-code = <INPUT_REL_Y>;
-            time-to-max-speed-ms = <250>;
-            acceleration-exponent = <3>;
+            time-to-max-speed-ms = <350>;
+            acceleration-exponent = <1>;
         };
 	};
 
