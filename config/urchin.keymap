@@ -114,14 +114,16 @@
 			timeout-ms = <200>;
 			require-prior-idle-ms = <200>;
 			key-positions = <20 22>;  // Z + C
-			bindings = <&kp LC(Z)>;
+			// bindings = <&kp LC(Z)>; // Linux
+			bindings = <&kp LG(Z)>; // MacOS
 		};
 
 		combo_save {
 			timeout-ms = <200>;
 			require-prior-idle-ms = <200>;
 			key-positions = <20 23>;  // Z + D
-			bindings = <&kp LC(S)>;
+			// bindings = <&kp LC(S)>; // Linux
+			bindings = <&kp LG(S)>; // MacOS
 		};
 
 		combo_underscore {
@@ -178,12 +180,12 @@
 							&lt SYM DEL &kp BSPC          &kp SPACE &lt FNC ENTER
 			>;
 		};
-
+		//LC Linux to LG MacOS
 		sym {
 			label = "Sym.";
 			bindings = <
-			&kp LC(X) &kp EXCL &kp LPAR &kp RPAR &kp BSLH		    &kp SLASH &kp N7 &kp N8 &kp N9 &kp KP_MINUS
-			&kp LC(C) &kp LC(V) &kp LBRC &kp RBRC &kp HASH          &kp ASTRK AS(N4) AS(N5) &kp N6 &kp KP_PLUS
+			&kp LG(X) &kp EXCL &kp LPAR &kp RPAR &kp BSLH		    &kp SLASH &kp N7 &kp N8 &kp N9 &kp KP_MINUS
+			&kp LG(C) &kp LG(V) &kp LBRC &kp RBRC &kp HASH          &kp ASTRK AS(N4) AS(N5) &kp N6 &kp KP_PLUS
 			&kp CARET &kp AMPS &kp LBKT &kp RBKT &kp PIPE 	        &kp DOT &kp N1 AS(N2) &kp N3 &kp KP_EQUAL
 											&none &none       &kp RET &kp N0
 			>;
