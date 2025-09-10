@@ -196,7 +196,7 @@
             bindings = <
             &kp HOME  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp PG_UP       &kp LALT   &kp F7    &kp F8   &kp F9   &kp F10
             &kp LGUI  &kp LEFT    &kp UP        &kp RIGHT     &kp C_PP       &kp LSHFT &kp F4    &kp F5   &kp F6   &kp F11
-            &kp PSCRN &kp K_PREV     &kp DOWN      &kp K_NEXT      &kp PG_DN         &kp LG  &kp F1    &kp F2   &kp F3   &kp F12
+            &kp PSCRN &kp K_PREV     &kp DOWN      &kp K_NEXT      &kp PG_DN         &kp LGUI  &kp F1    &kp F2   &kp F3   &kp F12
                                 &none   &kp LC(BSPC)          &none   &none
             >;
         };
